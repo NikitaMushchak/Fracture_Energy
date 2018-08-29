@@ -1,0 +1,61 @@
+﻿  a3r.cpp
+  a3r_b.cpp
+  atom3D.cpp
+  atom3Dv2.cpp
+g:\fracture_energy\quasi_3d\atom3dv2.h(23): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\fracture_energy\quasi_3d\atom3dv2.h(40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.h(74): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(499): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(504): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(552): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(556): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(586): warning C4018: '<': signed/unsigned mismatch
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(592): warning C4778: 'fprintf' : unterminated format string '%\n'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(596): warning C4778: 'fprintf' : unterminated format string '%\n'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(599): warning C4778: 'fprintf' : unterminated format string '%\n'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(650): warning C4018: '<': signed/unsigned mismatch
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(659): warning C4018: '<': signed/unsigned mismatch
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(656): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(661): warning C4778: 'fprintf' : unterminated format string '%\n'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(688): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(708): warning C4778: 'fprintf' : unterminated format string '%\n'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(752): warning C4018: '<': signed/unsigned mismatch
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(755): warning C4778: 'fprintf' : unterminated format string '%\n'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(849): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(879): warning C4778: 'fprintf' : unterminated format string '%\n'
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(893): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(894): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.cpp(921): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+  IarrayS.cpp
+  init.cpp
+g:\fracture_energy\quasi_3d\atom3dv2.h(23): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\fracture_energy\quasi_3d\atom3dv2.h(40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.h(74): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  init2.cpp
+g:\fracture_energy\quasi_3d\atom3dv2.h(23): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\fracture_energy\quasi_3d\atom3dv2.h(40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.h(74): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+  modeling3Dv2.cpp
+g:\fracture_energy\quasi_3d\atom3dv2.h(23): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\fracture_energy\quasi_3d\atom3dv2.h(40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.h(74): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(149): warning C4101: 'f': unreferenced local variable
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(753): warning C4477: 'fscanf' : format string '%u' requires an argument of type 'unsigned int *', but variadic argument 1 has type 'int'
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(756): warning C4477: 'fscanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'double'
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(759): warning C4477: 'fscanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'double'
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(762): warning C4477: 'fscanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'double'
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(765): warning C4477: 'fscanf' : format string '%u' requires an argument of type 'unsigned int *', but variadic argument 1 has type 'int'
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(768): warning C4477: 'fscanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'double'
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(771): warning C4477: 'fscanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'double'
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(821): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+g:\fracture_energy\quasi_3d\modeling3dv2.cpp(1009): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  step3d.cpp
+g:\fracture_energy\quasi_3d\atom3dv2.h(23): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\fracture_energy\quasi_3d\atom3dv2.h(40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\fracture_energy\quasi_3d\atom3dv2.h(74): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  util.cpp
+  vector3d.cpp
+  _list.cpp
+  Generating Code...
+  Quasi_3D.vcxproj -> G:\Fracture_Energy\quasi_3D\Quasi_3D\Debug\Quasi_3D.exe

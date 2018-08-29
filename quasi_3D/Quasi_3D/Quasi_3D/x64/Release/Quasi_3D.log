@@ -1,0 +1,65 @@
+﻿  a3r.cpp
+  a3r_b.cpp
+  atom3D.cpp
+  atom3Dv2.cpp
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(23): warning C4305: инициализация: усечение из "double" в "float"
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(40): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(74): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(499): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(504): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(552): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(556): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(592): warning C4778: "fprintf": незавершенная строка форматирования "%\n"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(596): warning C4778: "fprintf": незавершенная строка форматирования "%\n"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(599): warning C4778: "fprintf": незавершенная строка форматирования "%\n"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(656): warning C4477: "fprintf": в строке форматирования "%f" требуется аргумент типа "double", но вариативный аргумент "1" имеет тип "int"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(661): warning C4778: "fprintf": незавершенная строка форматирования "%\n"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(688): warning C4477: "fprintf": в строке форматирования "%f" требуется аргумент типа "double", но вариативный аргумент "1" имеет тип "int"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(708): warning C4778: "fprintf": незавершенная строка форматирования "%\n"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(755): warning C4778: "fprintf": незавершенная строка форматирования "%\n"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(849): warning C4477: "fprintf": в строке форматирования "%f" требуется аргумент типа "double", но вариативный аргумент "1" имеет тип "int"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(879): warning C4778: "fprintf": незавершенная строка форматирования "%\n"
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(893): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(894): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.cpp(921): warning C4477: "fprintf": в строке форматирования "%f" требуется аргумент типа "double", но вариативный аргумент "1" имеет тип "int"
+  IarrayS.cpp
+  init.cpp
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(23): warning C4305: инициализация: усечение из "double" в "float"
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(40): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(74): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  init2.cpp
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(23): warning C4305: инициализация: усечение из "double" в "float"
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(40): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(74): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  main.cpp
+  modeling3Dv2.cpp
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(23): warning C4305: инициализация: усечение из "double" в "float"
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(40): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(74): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(68): warning C4477: "printf": в строке форматирования "%i" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "::size_t"
+  c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(68): note: рекомендуется использовать "%zi" в строке форматирования
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(69): warning C4477: "printf": в строке форматирования "%i" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "::size_t"
+  c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(69): note: рекомендуется использовать "%zi" в строке форматирования
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(70): warning C4477: "printf": в строке форматирования "%i" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "::size_t"
+  c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(70): note: рекомендуется использовать "%zi" в строке форматирования
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(149): warning C4101: f: неиспользованная локальная переменная
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(753): warning C4477: "fscanf": в строке форматирования "%u" требуется аргумент типа "unsigned int *", но вариативный аргумент "1" имеет тип "int"
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(756): warning C4477: "fscanf": в строке форматирования "%lf" требуется аргумент типа "double *", но вариативный аргумент "1" имеет тип "double"
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(759): warning C4477: "fscanf": в строке форматирования "%lf" требуется аргумент типа "double *", но вариативный аргумент "1" имеет тип "double"
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(762): warning C4477: "fscanf": в строке форматирования "%lf" требуется аргумент типа "double *", но вариативный аргумент "1" имеет тип "double"
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(765): warning C4477: "fscanf": в строке форматирования "%u" требуется аргумент типа "unsigned int *", но вариативный аргумент "1" имеет тип "int"
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(768): warning C4477: "fscanf": в строке форматирования "%lf" требуется аргумент типа "double *", но вариативный аргумент "1" имеет тип "double"
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(771): warning C4477: "fscanf": в строке форматирования "%lf" требуется аргумент типа "double *", но вариативный аргумент "1" имеет тип "double"
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(821): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\modeling3dv2.cpp(1009): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  step3d.cpp
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(23): warning C4305: инициализация: усечение из "double" в "float"
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(40): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+c:\users\никита\desktop\quasi_3d\atom3dv2.h(74): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  util.cpp
+  vector3d.cpp
+  _list.cpp
+  Создание кода
+  All 404 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Quasi_3D.vcxproj -> C:\Users\Никита\Desktop\quasi_3D\Quasi_3D\x64\Release\Quasi_3D.exe
