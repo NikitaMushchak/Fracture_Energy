@@ -1113,23 +1113,23 @@ void Modeling3D_14()
 				<< "\nPressure: " << press << "\n";
 
 			FILE* f = fopen("output/Crack_Propagation.txt", "a");
-			fprintf(f, "%i\t %i\t %f\t %e\t %e\t %e\n", s, GetLiq(bonds), Volume(bonds,d_S), press, AspectRatio(as,bonds), diameter * area.Width() / 2);
+			fprintf(f, "%i\t %i\t %e\t\n", s, GetLiq(bonds), Energy_Potencial(bonds, d_S));
             fclose(f);
         }
 
-		if (outp && !(s % sexit))
+		/*if (outp && !(s % sexit))
 		{
 			FILE* fs = fopen("output/Stresses.txt", "a");
 			fprintf(fs, "%i\t %e\t %e\t %e\t %e\t %e\t %e\t %e\t %e\t %e\n", s,Energy_Potencial(bonds,d_S), 
 			sigma_x, sigma_y, sigma_z, sigma_xy, sigma_xz, sigma_yz, 
 			pow(1.000001, s / sexit) - 1, tt*(pow(1-000001, s / sexit) - 1));
 			fclose(fs);
-		}		
+		}		*/
 
 		double Vol = Volume(bonds,d_S);
 		double press_max = 1.25e-4;
 
-		if ((s % ( 4*v * sexit) == 0))//||(s<20)) 
+		if ((s % ( v * sexit) == 0))//||(s<20)) 
 		{
 			//area.ExtendX(as, n, 1-2*0.000001);
 			//area.ExtendX(as, n, 1-0.0000001);
@@ -1139,12 +1139,13 @@ void Modeling3D_14()
 				//area.ExtendZ(as, n, 1. + 0.5 * 10 * 0.000001);//  area.ExtendZ(as, n, 1. + 0.33 * 10 * 0.000001);
 				//area.ExtendY(as, n, 1. + 0.5 * 10 * 0.000001);//  area.ExtendZ(as, n, 1. + 0.33 * 10 * 0.000001);
 			//shear
-			//area.ExtendZ(as, n, 1.  - 10. * 0.000001);// compression 
-			//area.ExtendX(as, n, 1.  + 10. * 0.000001);
+			std::cout << "Add shear" << std::endl;
+			area.ExtendY(as, n, 1.  - 10. * 0.000001);// compression 
+			area.ExtendX(as, n, 1.  + 10. * 0.000001);
 			
 			// shear XY axis
 
-			area.AddShearYX(as, n , 5. * 0.000001);
+			//area.AddShearYX(as, n , 5. * 0.000001);
 			//area.ExtendY(as, n, 1. + 0.5 * 10 * 0.000001);
 				//area.ExtendY(as, n, 1-0.0000001*0.5);
 				//std::cout << "with shear\n";
