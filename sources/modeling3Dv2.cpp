@@ -907,7 +907,7 @@ void Modeling3D_14()
 	double orientation = 0;
 	int parallel = 0;
 	int tt = 0;
-	size_t v = 5; // compression step v * sexit
+	size_t v = 10; // compression step v * sexit
 
 	FILE* f1 = fopen("output/Crack_Propagation.txt", "w");
 	fclose(f1);
@@ -995,8 +995,8 @@ void Modeling3D_14()
 	//__________________________________________________________________________________________________________________________________________
 	Vector3D center(0.5, 0.5, 0.5);
 	Vector3D normal(0, 0, 0);
-	normal.y = cos(orientation / 2);
-	normal.x = sin(orientation / 2);
+	normal.y = sin(orientation / 2);
+	normal.x = cos(orientation / 2);
 	double density = 0.1; //плотность расположения трещин
 	//int parallel = 0; // 0 - трещины под случайными углами, 1 - параллельны одной из стенок
 	int intersection = 0; //0 - нет пересечний, 1 - есть
@@ -1069,12 +1069,14 @@ void Modeling3D_14()
 	fclose(f);*/
 
 	int sexit = 100;
+	float ini_bonds;
 	for (s=s0; s<=s_max; s++)
     {
 
 		if (s == 0)
 		{
 			Get_Init_Coord_N(as, s, area, bonds.GetData(), n, a_bonds.GetData());
+			ini_bonds = GetLiq(bonds);
 		}
 
         if (outp && !(s%sexit))
@@ -1087,17 +1089,18 @@ void Modeling3D_14()
 			if (s == s0){
 				//Save_XYZ_Media(area, s, as, n, mod_E_in, mod_E, mod_E, KC_init,KC, KC, part_third_centr);
 				Save_XYZ_Gap(area, s, as, bonds, n, Volume(bonds, d_S));
+				
 			}
 			if (s%(sexit*4)){
 				Save_XYZ_Gap(area,s, as, bonds, n, Volume(bonds, d_S));
 			}
 			//Stress_XYZ_Gap(as, s, area, bonds.GetData(), N_B, a_bonds.GetData(), n);
 			//GetStress_XYZ(area, as, bonds, sigma_x, sigma_y, sigma_z, sigma_xy, sigma_xz, sigma_yz);
-			GetStressTensor(as, n, area, bonds.GetData(), N_B, sigma_x, sigma_y, sigma_z, sigma_xy, sigma_xz, sigma_yz);
+			//GetStressTensor(as, n, area, bonds.GetData(), N_B, sigma_x, sigma_y, sigma_z, sigma_xy, sigma_xz, sigma_yz);
 			//Get_Press(as, s, area, bonds.GetData(), n, N_B, a_bonds.GetData(), d_S, RealP);
 			//Get_True_Strain_N(as, s, area, bonds.GetData(), n, a_bonds.GetData(), RealP, diameter * area.Width() / 2);
         }		
-
+		//std::cout << "ini_bonds" << ini_bonds << std::endl;
         if (outp && !(s%sexit))
         {
            // if (s>s0)   { UpdateParams_E(s_max, press_k, mod_E, KC, n_layers, part_third_centr,diameter); }
@@ -1113,7 +1116,7 @@ void Modeling3D_14()
 				<< "\nPressure: " << press << "\n";
 
 			FILE* f = fopen("output/Crack_Propagation.txt", "a");
-			fprintf(f, "%i\t %i\t %e\t\n", s, GetLiq(bonds), Energy_Potencial(bonds, d_S));
+			fprintf(f, "%i\t %i\t %f\t %e\t\n", s, GetLiq(bonds), (float)GetLiq(bonds)/ini_bonds-(float)1., Energy_Potencial(bonds, d_S));
             fclose(f);
         }
 
@@ -1140,12 +1143,12 @@ void Modeling3D_14()
 				//area.ExtendY(as, n, 1. + 0.5 * 10 * 0.000001);//  area.ExtendZ(as, n, 1. + 0.33 * 10 * 0.000001);
 			//shear
 			std::cout << "Add shear" << std::endl;
-			area.ExtendY(as, n, 1.  - 10. * 0.000001);// compression 
-			area.ExtendX(as, n, 1.  + 10. * 0.000001);
+			//area.ExtendY(as, n, 1.  + 5. * 0.000001);// compression 
+			//area.ExtendX(as, n, 1.  - 5. * 0.000001);
 			
 			// shear XY axis
 
-			//area.AddShearYX(as, n , 5. * 0.000001);
+			area.AddShearYX(as, n , 5. * 0.000001);
 			//area.ExtendY(as, n, 1. + 0.5 * 10 * 0.000001);
 				//area.ExtendY(as, n, 1-0.0000001*0.5);
 				//std::cout << "with shear\n";
